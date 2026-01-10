@@ -4,7 +4,7 @@ This repo contains my solution for Udacity’s Deep Reinforcement Learning Nanod
 
 ## Environment
 
-The agent moves in a square world and collects bananas:
+The agent moves in a world and collects bananas:
 
 - **Reward:** +1 for a yellow banana, -1 for a blue banana  
 - **State space:** 37 continuous values (velocity + ray-based perception)  
