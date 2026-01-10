@@ -73,3 +73,5 @@ Loads `checkpoint.pth` and runs a few episodes with a greedy policy (`eps=0`).
 - Average score (last 100 episodes): **13.02**
 - Evaluation mean score (10 episodes): **15.10**
 
+![Training scores](scores.png)
+
