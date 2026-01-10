@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Unity environment (do NOT commit)
+Banana_Windows_x86_64/
+Banana_Linux/
+Banana.app/
+
+# Logs
+*.log
