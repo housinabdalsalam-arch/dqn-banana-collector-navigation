@@ -69,9 +69,9 @@ Loads `checkpoint.pth` and runs a few episodes with a greedy policy (`eps=0`).
 
 ## Results
 
-- Solved in **583 episodes**
-- Average score (last 100 episodes): **13.02**
-- Evaluation mean score (10 episodes): **15.10**
+- Solved in **587 episodes**
+- Average score (last 100 episodes): **13.03**
+- Evaluation mean score (5 episodes): **15**
 
 ![Training scores](scores.png)
 
