@@ -64,9 +64,19 @@ Architecture: **37 → 64 → 64 → 4**
 
 The environment is solved when the average score over 100 consecutive episodes is **>= +13**.
 
-My agent solved the environment in **583 episodes**, reaching an average score of **13.02** over the last 100 episodes.
+My agent solved the environment in **583 episodes**, reaching an average score of **13.03** over the last 100 episodes.
 
 ![Training curve](scores.png)
 
-Evaluation using the saved checkpoint (`checkpoint.pth`) achieved a mean score of **15.10** over 10 episodes.
+Evaluation using the saved checkpoint (`checkpoint.pth`) achieved a mean score of **15** over 10 episodes.
 
+
+## Future Work
+
+Since this is a basic DQN solution, there are a few well-known upgrades that could be tried next:
+
+- **Double DQN**: DQN can sometimes overestimate Q-values. Double DQN is a small change that usually makes training more stable by reducing this overestimation.
+
+- **Prioritized Experience Replay**: Right now the replay buffer samples experiences uniformly. With prioritized replay, the agent would train more often on “important” experiences (for example, transitions with larger TD-error), which can improve learning speed.
+
+- **Dueling DQN**: Replace the Q-network with a dueling architecture that separates “state value” and “action advantage”. This can help especially when many actions are similar and may improve performance.
